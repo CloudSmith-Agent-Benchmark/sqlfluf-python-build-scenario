@@ -79,7 +79,7 @@ def nested_combine(*dicts: NestedStringDict[T]) -> NestedStringDict[T]:
 def dict_diff(
     left: NestedStringDict[T],
     right: NestedStringDict[T],
-    ignore: Optional[list[st] = None,
+    ignore: Optional[list[str]] = None
 ) -> NestedStringDict[T]:
     """Work out the difference between two dictionaries.
 
