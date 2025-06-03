@@ -38,5 +38,5 @@ jobs:
         continue-on-error: true
         run: tox -e "mypyc"
       - name: Check if any step failed
-        if: ${{ steps.mypy.outcome == 'failure' || steps.mypyc.outcome == 'failure' }}
+        if: ${{ steps.mypy.conclusion == 'failure' || steps.mypyc.conclusion == 'failure' }}
         run: exit 1
