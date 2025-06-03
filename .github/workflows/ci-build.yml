@@ -13,10 +13,10 @@ on:
   workflow_dispatch:
   pull_request:
     branches:
-      - main
+      - ci-build
   push:
     branches:
-      - main
+      - ci-build
 
 jobs:
   build:
