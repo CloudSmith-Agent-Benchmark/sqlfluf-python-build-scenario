@@ -215,8 +215,8 @@ class Dialect:
                 assert isinstance(
                     replacement, type
                 ), f"Cannot replace {n!r} with {replacement}"
-                old_seg = cast(type["BaseSegment"], self._library[n])
-                new_seg = cast(type["BaseSegment"], replacement)
+                old_seg = cast("type[BaseSegment]", self._library[n])
+                new_seg = cast("type[BaseSegment]", replacement)
                 assert issubclass(old_seg, BaseSegment)
                 assert issubclass(new_seg, BaseSegment)
                 subclass = issubclass(new_seg, old_seg)
@@ -264,7 +264,7 @@ class Dialect:
             )
         return grammar
 
-    def get_segment(self, name: str) -> type["BaseSegment"]:
+    def get_segment(self, name: str) -> "type[BaseSegment]":
         """Allow access to segments pre-expansion.
 
         This is typically for dialect inheritance. This method
@@ -272,7 +272,7 @@ class Dialect:
         """
         if name not in self._library:  # pragma: no cover
             raise ValueError(f"Element {name} not found in dialect.")
-        segment = cast(type["BaseSegment"], self._library[name])
+        segment = cast("type[BaseSegment]", self._library[name])
 
         if issubclass(segment, BaseSegment):
             return segment
