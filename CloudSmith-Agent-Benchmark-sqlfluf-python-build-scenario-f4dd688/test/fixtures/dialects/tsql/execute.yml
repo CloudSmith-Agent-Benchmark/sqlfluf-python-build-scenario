@@ -1,0 +1,309 @@
+# YML test files are auto-generated from SQL files and should not be edited by
+# hand. To help enforce this, the "hash" field in the file must match a hash
+# computed by SQLFluff when running the tests. Please run
+# `python test/generate_parse_fixture_yml.py`  to generate them after adding or
+# altering SQL files.
+_hash: edf3c24cf4a000d212d62b7a821ffe43e185aa125c1e593db1ac52ceda099cfc
+file:
+  batch:
+  - statement:
+      execute_script_statement:
+        keyword: EXEC
+        object_reference:
+        - quoted_identifier: '[Reporting]'
+        - dot: .
+        - quoted_identifier: '[Load_CLL]'
+  - statement:
+      execute_script_statement:
+        keyword: EXECUTE
+        object_reference:
+        - naked_identifier: dbo
+        - dot: .
+        - naked_identifier: ProcTestDefaults
+        parameter: '@p2'
+        comparison_operator:
+          raw_comparison_operator: '='
+        quoted_literal: "'A'"
+        statement_terminator: ;
+  - statement:
+      execute_script_statement:
+        keyword: EXECUTE
+        object_reference:
+        - naked_identifier: dbo
+        - dot: .
+        - naked_identifier: ProcTestDefaults
+        numeric_literal: '68'
+        comma: ','
+        quoted_literal: "'B'"
+        statement_terminator: ;
+  - statement:
+      execute_script_statement:
+      - keyword: EXECUTE
+      - object_reference:
+        - naked_identifier: dbo
+        - dot: .
+        - naked_identifier: ProcTestDefaults
+      - numeric_literal: '68'
+      - comma: ','
+      - quoted_literal: "'C'"
+      - comma: ','
+      - quoted_literal: "'House'"
+      - statement_terminator: ;
+  - statement:
+      execute_script_statement:
+      - keyword: EXECUTE
+      - object_reference:
+        - naked_identifier: dbo
+        - dot: .
+        - naked_identifier: ProcTestDefaults
+      - parameter: '@p1'
+      - comparison_operator:
+          raw_comparison_operator: '='
+      - keyword: DEFAULT
+      - comma: ','
+      - parameter: '@p2'
+      - comparison_operator:
+          raw_comparison_operator: '='
+      - quoted_literal: "'D'"
+      - statement_terminator: ;
+  - statement:
+      execute_script_statement:
+      - keyword: EXECUTE
+      - object_reference:
+        - naked_identifier: dbo
+        - dot: .
+        - naked_identifier: ProcTestDefaults
+      - keyword: DEFAULT
+      - comma: ','
+      - parameter: '@p3'
+      - comparison_operator:
+          raw_comparison_operator: '='
+      - quoted_literal: "'Local'"
+      - comma: ','
+      - parameter: '@p2'
+      - comparison_operator:
+          raw_comparison_operator: '='
+      - quoted_literal: "'E'"
+      - statement_terminator: ;
+  - statement:
+      execute_script_statement:
+      - keyword: EXECUTE
+      - object_reference:
+        - naked_identifier: dbo
+        - dot: .
+        - naked_identifier: ProcTestDefaults
+      - keyword: DEFAULT
+      - comma: ','
+      - quoted_literal: "'H'"
+      - comma: ','
+      - keyword: DEFAULT
+      - statement_terminator: ;
+  - statement:
+      execute_script_statement:
+      - keyword: EXECUTE
+      - object_reference:
+        - naked_identifier: dbo
+        - dot: .
+        - naked_identifier: ProcTestDefaults
+      - keyword: DEFAULT
+      - comma: ','
+      - quoted_literal: "'I'"
+      - comma: ','
+      - parameter: '@p3'
+      - comparison_operator:
+          raw_comparison_operator: '='
+      - keyword: DEFAULT
+      - statement_terminator: ;
+  - statement:
+      execute_script_statement:
+      - keyword: EXECUTE
+      - object_reference:
+          naked_identifier: sp_addextendedproperty
+      - parameter: '@name'
+      - comparison_operator:
+          raw_comparison_operator: '='
+      - quoted_literal: "N'MS_Description'"
+      - comma: ','
+      - parameter: '@value'
+      - comparison_operator:
+          raw_comparison_operator: '='
+      - quoted_literal: "'my text description'"
+      - comma: ','
+      - parameter: '@level0type'
+      - comparison_operator:
+          raw_comparison_operator: '='
+      - quoted_literal: "N'SCHEMA'"
+      - comma: ','
+      - parameter: '@level0name'
+      - comparison_operator:
+          raw_comparison_operator: '='
+      - quoted_literal: "N'my_schema_name'"
+      - comma: ','
+      - parameter: '@level1type'
+      - comparison_operator:
+          raw_comparison_operator: '='
+      - quoted_literal: "N'my_object_type'"
+      - comma: ','
+      - parameter: '@level1name'
+      - comparison_operator:
+          raw_comparison_operator: '='
+      - quoted_literal: "N'my_object_name'"
+  - statement:
+      execute_script_statement:
+        keyword: EXEC
+        parameter: '@pRes'
+        comparison_operator:
+          raw_comparison_operator: '='
+        object_reference:
+        - naked_identifier: dbo
+        - dot: .
+        - naked_identifier: ProcTestDefaults
+        statement_terminator: ;
+  - statement:
+      execute_script_statement:
+      - keyword: EXEC
+      - parameter: '@pRes'
+      - comparison_operator:
+          raw_comparison_operator: '='
+      - object_reference:
+        - naked_identifier: dbo
+        - dot: .
+        - naked_identifier: ProcTestDefaults
+      - parameter: '@p1'
+      - comparison_operator:
+          raw_comparison_operator: '='
+      - keyword: DEFAULT
+      - statement_terminator: ;
+  - statement:
+      execute_script_statement:
+        keyword: EXECUTE
+        parameter: '@pRes'
+        comparison_operator:
+          raw_comparison_operator: '='
+        object_reference:
+        - naked_identifier: dbo
+        - dot: .
+        - naked_identifier: ProcTestDefaults
+        statement_terminator: ;
+  - statement:
+      execute_script_statement:
+      - keyword: EXECUTE
+      - parameter: '@pRes'
+      - comparison_operator:
+          raw_comparison_operator: '='
+      - object_reference:
+        - naked_identifier: dbo
+        - dot: .
+        - naked_identifier: ProcTestDefaults
+      - parameter: '@p1'
+      - comparison_operator:
+          raw_comparison_operator: '='
+      - keyword: DEFAULT
+      - statement_terminator: ;
+  - statement:
+      declare_segment:
+        keyword: DECLARE
+        parameter: '@statement'
+        data_type:
+          data_type_identifier: nvarchar
+          bracketed_arguments:
+            bracketed:
+              start_bracket: (
+              keyword: max
+              end_bracket: )
+        comparison_operator:
+          raw_comparison_operator: '='
+        expression:
+          quoted_literal: "'SELECT 1'"
+  - statement:
+      execute_script_statement:
+        keyword: EXEC
+        bracketed:
+          start_bracket: (
+          object_reference:
+            parameter: '@statement'
+          end_bracket: )
+        statement_terminator: ;
+  - statement:
+      execute_script_statement:
+        keyword: EXEC
+        bracketed:
+          start_bracket: (
+          quoted_literal: "'DROP TABLE BoardInventory.BoardInventoryFact_Stage;'"
+          end_bracket: )
+        statement_terminator: ;
+  - statement:
+      declare_segment:
+      - keyword: DECLARE
+      - parameter: '@s1'
+      - keyword: AS
+      - data_type:
+          data_type_identifier: varchar
+          bracketed_arguments:
+            bracketed:
+              start_bracket: (
+              expression:
+                numeric_literal: '10'
+              end_bracket: )
+      - comparison_operator:
+          raw_comparison_operator: '='
+      - expression:
+          null_literal: 'NULL'
+      - statement_terminator: ;
+  - statement:
+      declare_segment:
+        keyword: DECLARE
+        parameter: '@s2'
+        data_type:
+          data_type_identifier: varchar
+          bracketed_arguments:
+            bracketed:
+              start_bracket: (
+              expression:
+                numeric_literal: '10'
+              end_bracket: )
+        comparison_operator:
+          raw_comparison_operator: '='
+        expression:
+          null_literal: 'NULL'
+        statement_terminator: ;
+  - statement:
+      set_segment:
+        keyword: SET
+        parameter: '@s1'
+        assignment_operator:
+          raw_comparison_operator: '='
+        expression:
+          quoted_literal: "'select '"
+        statement_terminator: ;
+  - statement:
+      set_segment:
+        keyword: SET
+        parameter: '@s2'
+        assignment_operator:
+          raw_comparison_operator: '='
+        expression:
+          quoted_literal: "'123'"
+        statement_terminator: ;
+  - statement:
+      execute_script_statement:
+        keyword: EXECUTE
+        bracketed:
+          start_bracket: (
+          expression:
+          - parameter: '@s1'
+          - binary_operator: +
+          - parameter: '@s2'
+          end_bracket: )
+        statement_terminator: ;
+  - statement:
+      execute_script_statement:
+        keyword: EXEC
+        bracketed:
+          start_bracket: (
+          expression:
+          - quoted_literal: "'select '"
+          - binary_operator: +
+          - quoted_literal: "'123'"
+          end_bracket: )
+        statement_terminator: ;

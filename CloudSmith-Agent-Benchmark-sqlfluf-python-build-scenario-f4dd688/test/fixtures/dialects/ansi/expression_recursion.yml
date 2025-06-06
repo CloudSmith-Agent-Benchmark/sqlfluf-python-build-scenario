@@ -1,0 +1,302 @@
+# YML test files are auto-generated from SQL files and should not be edited by
+# hand. To help enforce this, the "hash" field in the file must match a hash
+# computed by SQLFluff when running the tests. Please run
+# `python test/generate_parse_fixture_yml.py`  to generate them after adding or
+# altering SQL files.
+_hash: 2af3c174ee9c4ac29110809b8c6b6b716e07fa0b9953e2f83ee88c2920b7529c
+file:
+  statement:
+    select_statement:
+      select_clause:
+        keyword: select
+        select_clause_element:
+          numeric_literal: '1'
+      from_clause:
+        keyword: from
+        from_expression:
+          from_expression_element:
+            table_expression:
+              table_reference:
+                naked_identifier: test_table
+      where_clause:
+        keyword: where
+        expression:
+        - column_reference:
+          - naked_identifier: test_table
+          - dot: .
+          - naked_identifier: string_field
+        - keyword: like
+        - quoted_literal: "'some string%'"
+        - binary_operator: or
+        - column_reference:
+          - naked_identifier: test_table
+          - dot: .
+          - naked_identifier: string_field
+        - keyword: like
+        - quoted_literal: "'some string%'"
+        - binary_operator: or
+        - column_reference:
+          - naked_identifier: test_table
+          - dot: .
+          - naked_identifier: string_field
+        - keyword: like
+        - quoted_literal: "'some string%'"
+        - binary_operator: or
+        - column_reference:
+          - naked_identifier: test_table
+          - dot: .
+          - naked_identifier: string_field
+        - keyword: like
+        - quoted_literal: "'some string%'"
+        - binary_operator: or
+        - column_reference:
+          - naked_identifier: test_table
+          - dot: .
+          - naked_identifier: string_field
+        - keyword: like
+        - quoted_literal: "'some string%'"
+        - binary_operator: or
+        - column_reference:
+          - naked_identifier: test_table
+          - dot: .
+          - naked_identifier: string_field
+        - keyword: like
+        - quoted_literal: "'some string%'"
+        - binary_operator: or
+        - column_reference:
+          - naked_identifier: test_table
+          - dot: .
+          - naked_identifier: string_field
+        - keyword: like
+        - quoted_literal: "'some string%'"
+        - binary_operator: or
+        - column_reference:
+          - naked_identifier: test_table
+          - dot: .
+          - naked_identifier: string_field
+        - keyword: like
+        - quoted_literal: "'some string%'"
+        - binary_operator: or
+        - column_reference:
+          - naked_identifier: test_table
+          - dot: .
+          - naked_identifier: string_field
+        - keyword: like
+        - quoted_literal: "'some string%'"
+        - binary_operator: or
+        - column_reference:
+          - naked_identifier: test_table
+          - dot: .
+          - naked_identifier: string_field
+        - keyword: like
+        - quoted_literal: "'some string%'"
+        - binary_operator: or
+        - column_reference:
+          - naked_identifier: test_table
+          - dot: .
+          - naked_identifier: string_field
+        - keyword: like
+        - quoted_literal: "'some string%'"
+        - binary_operator: or
+        - column_reference:
+          - naked_identifier: test_table
+          - dot: .
+          - naked_identifier: string_field
+        - keyword: like
+        - quoted_literal: "'some string%'"
+        - binary_operator: or
+        - column_reference:
+          - naked_identifier: test_table
+          - dot: .
+          - naked_identifier: string_field
+        - keyword: like
+        - quoted_literal: "'some string%'"
+        - binary_operator: or
+        - column_reference:
+          - naked_identifier: test_table
+          - dot: .
+          - naked_identifier: string_field
+        - keyword: like
+        - quoted_literal: "'some string%'"
+        - binary_operator: or
+        - column_reference:
+          - naked_identifier: test_table
+          - dot: .
+          - naked_identifier: string_field
+        - keyword: like
+        - quoted_literal: "'some string%'"
+        - binary_operator: or
+        - column_reference:
+          - naked_identifier: test_table
+          - dot: .
+          - naked_identifier: string_field
+        - keyword: like
+        - quoted_literal: "'some string%'"
+        - binary_operator: or
+        - column_reference:
+          - naked_identifier: test_table
+          - dot: .
+          - naked_identifier: string_field
+        - keyword: like
+        - quoted_literal: "'some string%'"
+        - binary_operator: or
+        - column_reference:
+          - naked_identifier: test_table
+          - dot: .
+          - naked_identifier: string_field
+        - keyword: like
+        - quoted_literal: "'some string%'"
+        - binary_operator: or
+        - column_reference:
+          - naked_identifier: test_table
+          - dot: .
+          - naked_identifier: string_field
+        - keyword: like
+        - quoted_literal: "'some string%'"
+        - binary_operator: or
+        - column_reference:
+          - naked_identifier: test_table
+          - dot: .
+          - naked_identifier: string_field
+        - keyword: like
+        - quoted_literal: "'some string%'"
+        - binary_operator: or
+        - column_reference:
+          - naked_identifier: test_table
+          - dot: .
+          - naked_identifier: string_field
+        - keyword: like
+        - quoted_literal: "'some string%'"
+        - binary_operator: or
+        - column_reference:
+          - naked_identifier: test_table
+          - dot: .
+          - naked_identifier: string_field
+        - keyword: like
+        - quoted_literal: "'some string%'"
+        - binary_operator: or
+        - column_reference:
+          - naked_identifier: test_table
+          - dot: .
+          - naked_identifier: string_field
+        - keyword: like
+        - quoted_literal: "'some string%'"
+        - binary_operator: or
+        - column_reference:
+          - naked_identifier: test_table
+          - dot: .
+          - naked_identifier: string_field
+        - keyword: like
+        - quoted_literal: "'some string%'"
+        - binary_operator: or
+        - column_reference:
+          - naked_identifier: test_table
+          - dot: .
+          - naked_identifier: string_field
+        - keyword: like
+        - quoted_literal: "'some string%'"
+        - binary_operator: or
+        - column_reference:
+          - naked_identifier: test_table
+          - dot: .
+          - naked_identifier: string_field
+        - keyword: like
+        - quoted_literal: "'some string%'"
+        - binary_operator: or
+        - column_reference:
+          - naked_identifier: test_table
+          - dot: .
+          - naked_identifier: string_field
+        - keyword: like
+        - quoted_literal: "'some string%'"
+        - binary_operator: or
+        - column_reference:
+          - naked_identifier: test_table
+          - dot: .
+          - naked_identifier: string_field
+        - keyword: like
+        - quoted_literal: "'some string%'"
+        - binary_operator: or
+        - column_reference:
+          - naked_identifier: test_table
+          - dot: .
+          - naked_identifier: string_field
+        - keyword: like
+        - quoted_literal: "'some string%'"
+        - binary_operator: or
+        - column_reference:
+          - naked_identifier: test_table
+          - dot: .
+          - naked_identifier: string_field
+        - keyword: like
+        - quoted_literal: "'some string%'"
+        - binary_operator: or
+        - column_reference:
+          - naked_identifier: test_table
+          - dot: .
+          - naked_identifier: string_field
+        - keyword: like
+        - quoted_literal: "'some string%'"
+        - binary_operator: or
+        - column_reference:
+          - naked_identifier: test_table
+          - dot: .
+          - naked_identifier: string_field
+        - keyword: like
+        - quoted_literal: "'some string%'"
+        - binary_operator: or
+        - column_reference:
+          - naked_identifier: test_table
+          - dot: .
+          - naked_identifier: string_field
+        - keyword: like
+        - quoted_literal: "'some string%'"
+        - binary_operator: or
+        - column_reference:
+          - naked_identifier: test_table
+          - dot: .
+          - naked_identifier: string_field
+        - keyword: like
+        - quoted_literal: "'some string%'"
+        - binary_operator: or
+        - column_reference:
+          - naked_identifier: test_table
+          - dot: .
+          - naked_identifier: string_field
+        - keyword: like
+        - quoted_literal: "'some string%'"
+        - binary_operator: or
+        - column_reference:
+          - naked_identifier: test_table
+          - dot: .
+          - naked_identifier: string_field
+        - keyword: like
+        - quoted_literal: "'some string%'"
+        - binary_operator: or
+        - column_reference:
+          - naked_identifier: test_table
+          - dot: .
+          - naked_identifier: string_field
+        - keyword: like
+        - quoted_literal: "'some string%'"
+        - binary_operator: or
+        - column_reference:
+          - naked_identifier: test_table
+          - dot: .
+          - naked_identifier: string_field
+        - keyword: like
+        - quoted_literal: "'some string%'"
+        - binary_operator: or
+        - column_reference:
+          - naked_identifier: test_table
+          - dot: .
+          - naked_identifier: string_field
+        - keyword: like
+        - quoted_literal: "'some string%'"
+        - binary_operator: or
+        - column_reference:
+          - naked_identifier: test_table
+          - dot: .
+          - naked_identifier: string_field
+        - keyword: like
+        - quoted_literal: "'some string%'"
