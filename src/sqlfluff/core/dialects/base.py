@@ -107,7 +107,7 @@ class Dialect:
 
         if label not in self._sets:
             self._sets[label] = set()
-        return cast(set[str], self._sets[label]
+        return cast(set[str], self._sets[label])
 
     def bracket_sets(self, label: str) -> set[BracketPairTuple]:
         """Allows access to bracket sets belonging to this dialect."""
